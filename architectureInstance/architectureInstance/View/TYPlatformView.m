@@ -34,6 +34,11 @@
     TYLayoutView *layoutView = [TYLayoutView new];
     [self addSubview:_layoutView = layoutView];
 }
+
+#define mark - 加入布局数据
+- (void)addViewLayoutModel:(NSString *)model {
+    [_layoutView addViewFrame:@""];
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

@@ -67,6 +67,66 @@
 - (void)selectorBut {
     
 }
+
+#define mark - 先创建控件在进行布局
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self initViewControls];
+    }
+    return self;
+}
+
+//创建控件不进行布局
+- (void)initViewControls {
+    UILabel *lbl = [UILabel new];
+    lbl.font = [UIFont systemFontOfSize:14];
+    lbl.textColor = [UIColor redColor];
+    [self addSubview:_lbl=lbl];
+    
+    UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
+    but.backgroundColor = [UIColor yellowColor];
+    [but setTitle:@"这是按钮" forState:UIControlStateNormal];
+    [but addTarget:self action:@selector(selectorBut1) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:_but = but];
+    
+    UIImageView *imageView = [UIImageView new];
+    imageView.backgroundColor = [UIColor orangeColor];
+    [self addSubview:_imageView = imageView];
+    
+    UITextField *textField = [UITextField new];
+    textField.backgroundColor = [UIColor magentaColor];
+    textField.delegate = self;
+    [self addSubview:_textField = textField];
+}
+
+- (void)selectorBut1 {
+    
+}
+
+//在这里进行布局
+- (void)addViewFrame:(NSString *)model {
+    _lbl.left = 10;
+    _lbl.top = 10;
+    _lbl.width = 200;
+    _lbl.height = 30;
+    
+    _but.left = 10;
+    _but.top = _lbl.top + _lbl.height;
+    _but.width = 100;
+    _but.height = 30;
+    
+    _imageView.left = 10;
+    _imageView.top = _but.top + _but.height;
+    _imageView.width = 300;
+    _imageView.height = 50;
+    
+    _textField.left = 10;
+    _textField.top = _imageView.top + _imageView.height;
+    _textField.width = 300;
+    _textField.height = 50;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

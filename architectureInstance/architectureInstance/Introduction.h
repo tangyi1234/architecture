@@ -14,6 +14,6 @@
 
 #import "UIView+add.h"
 #import "TYLayoutView.h"
-
+#import "TYPlatformView.h"
 
 #endif /* Introduction_h */

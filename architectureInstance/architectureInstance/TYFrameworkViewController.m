@@ -9,7 +9,7 @@
 #import "TYFrameworkViewController.h"
 #import "UIView+add.h"
 @interface TYFrameworkViewController ()
-
+@property (nonatomic, weak) TYPlatformView *platformView;
 @end
 
 @implementation TYFrameworkViewController
@@ -21,22 +21,29 @@
 }
 
 - (void)initView {
-    UIView *views = [UIView new];
-    views.left = 10;
-    views.top = 80;
-    views.width = 200;
-    views.height = 200;
-    views.backgroundColor = [UIColor redColor];
-    [self.view addSubview:views];
+    
+    TYPlatformView *platformView = [TYPlatformView new];
+    platformView.left = 0;
+    platformView.top = 100;
+    platformView.width = w;
+    platformView.height = h - 100;
+    platformView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:_platformView = platformView];
     
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
     but.left = 10;
-    but.top = 290;
+    but.top = 64;
     but.width = 100;
     but.height = 30;
-    but.backgroundColor = [UIColor yellowColor];
+    but.backgroundColor = self.view.backgroundColor;
     [but setTitle:@"点击看看" forState:UIControlStateNormal];
+    [but addTarget:self action:@selector(selectorBut) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but];
+    
+}
+
+- (void)selectorBut {
+    [_platformView addViewLayoutModel:@""];
 }
 
 - (void)didReceiveMemoryWarning {

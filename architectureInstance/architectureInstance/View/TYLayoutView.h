@@ -10,4 +10,5 @@
 
 @interface TYLayoutView : UIView
 + (instancetype)addLayoutView:(NSString *)str;
+- (void)addViewFrame:(NSString *)model;
 @end

@@ -346,6 +346,7 @@
 				DEVELOPMENT_TEAM = N5WRHCE748;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/architectureInstance/Introduction.h";
 				INFOPLIST_FILE = architectureInstance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Users-xiyin-desktop-name.architectureInstance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +362,7 @@
 				DEVELOPMENT_TEAM = N5WRHCE748;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/architectureInstance/Introduction.h";
 				INFOPLIST_FILE = architectureInstance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Users-xiyin-desktop-name.architectureInstance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
