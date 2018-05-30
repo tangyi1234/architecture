@@ -5,6 +5,9 @@
 //  Created by 汤义 on 2018/5/18.
 //  Copyright © 2018年 汤义. All rights reserved.
 //
+/*
+ 结论:能进行一次创建就一次创建完成，不要进行从新布局，这样太过去消耗性能。这里我们就要考虑我们的控件较为多的时候采用什么样的布局了。做创建控件时能先创建控件的就先创建控件，先要固定下来大体的控件，在创建控件的类中不能去做运算功能。
+ */
 
 #import "TYLayoutView.h"
 @interface TYLayoutView()<UITextFieldDelegate>
@@ -104,7 +107,8 @@
     
 }
 
-//在这里进行布局
+//在这里进行布局(在这一块进行布局也可以说是在从新布局，从新布局是消耗性能)
+
 - (void)addViewFrame:(NSString *)model {
     _lbl.left = 10;
     _lbl.top = 10;

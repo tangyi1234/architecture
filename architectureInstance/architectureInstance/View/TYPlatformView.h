@@ -10,6 +10,7 @@
 
 @interface TYPlatformView : UIView
 + (instancetype)addPlatformView;
+
 - (void)addViewLayout;
 - (void)addViewLayoutModel:(NSString *)model;
 @end

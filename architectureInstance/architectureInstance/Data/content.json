@@ -1,0 +1,14 @@
+{
+    "json": [
+             {
+             "IDS":"0",
+             "imageName": "type_big_1",
+             "names": "关于我们更新"
+             },
+             {
+             "IDS":"1",
+             "imageName": "type_big_9",
+             "names": "意见反馈更新"
+             },
+    ]
+}
