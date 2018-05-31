@@ -15,7 +15,15 @@
 #import "UIView+add.h"
 #import "TYLayoutView.h"
 #import "TYPlatformView.h"
+
+
 #import "TYInstancePlatformModel.h"
 #import "TYModel.h"
+#import "TYInstanceDataModel.h"
+#import "TYCalculateFrameModel.h"
+
+
+#import "TYInstanceLayoutView.h"
+#import "TYJsonData.h"
 
 #endif /* Introduction_h */

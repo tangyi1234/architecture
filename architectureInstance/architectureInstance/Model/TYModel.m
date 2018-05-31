@@ -26,11 +26,13 @@
         NSString *key = [ivarName substringFromIndex:1];
         //通过key来获取value
         id value = dic[key];
+        NSLog(@"打印数据:%@",value);
         //防错处理
         if (value) {
-            [objc setObject:value forKey:key];
+            [objc setValue:value forKey:key];
         }
     }
+    free(ivarList);
     return objc;
 }
 @end

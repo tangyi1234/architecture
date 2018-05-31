@@ -22,6 +22,11 @@
 		A282283920BD30A600219EAF /* TYSubclassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A282283020BD30A600219EAF /* TYSubclassTableViewCell.m */; };
 		A282283A20BD30A600219EAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A282283120BD30A600219EAF /* ViewController.m */; };
 		A282283B20BD30A600219EAF /* TYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A282283320BD30A600219EAF /* TYTableViewCell.m */; };
+		A2A5D0E420BF98D600B31EE9 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A2A5D0E320BF98D600B31EE9 /* 1.png */; };
+		A2A5D0E620BF9AAB00B31EE9 /* contentData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2A5D0E520BF9AAB00B31EE9 /* contentData.json */; };
+		A2A5D0E920BF9BD900B31EE9 /* TYJsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0E820BF9BD900B31EE9 /* TYJsonData.m */; };
+		A2A5D0EC20BF9E2300B31EE9 /* TYInstanceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */; };
+		A2A5D0EF20BFA3B400B31EE9 /* TYCalculateFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0EE20BFA3B400B31EE9 /* TYCalculateFrameModel.m */; };
 		A2E0218C20BE8FDA008EA624 /* TYInstancePlatformView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */; };
 		A2E0219020BE9113008EA624 /* TYInstancePlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0218F20BE9113008EA624 /* TYInstancePlatformModel.m */; };
 		A2E0219320BE9189008EA624 /* TYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0219220BE9189008EA624 /* TYModel.m */; };
@@ -60,6 +65,14 @@
 		A282283220BD30A600219EAF /* TYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableViewCell.h; sourceTree = "<group>"; };
 		A282283320BD30A600219EAF /* TYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableViewCell.m; sourceTree = "<group>"; };
 		A282283420BD30A600219EAF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A2A5D0E320BF98D600B31EE9 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		A2A5D0E520BF9AAB00B31EE9 /* contentData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contentData.json; sourceTree = "<group>"; };
+		A2A5D0E720BF9BD900B31EE9 /* TYJsonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYJsonData.h; sourceTree = "<group>"; };
+		A2A5D0E820BF9BD900B31EE9 /* TYJsonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYJsonData.m; sourceTree = "<group>"; };
+		A2A5D0EA20BF9E2300B31EE9 /* TYInstanceDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstanceDataModel.h; sourceTree = "<group>"; };
+		A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstanceDataModel.m; sourceTree = "<group>"; };
+		A2A5D0ED20BFA3B400B31EE9 /* TYCalculateFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYCalculateFrameModel.h; sourceTree = "<group>"; };
+		A2A5D0EE20BFA3B400B31EE9 /* TYCalculateFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYCalculateFrameModel.m; sourceTree = "<group>"; };
 		A2E0218A20BE8FDA008EA624 /* TYInstancePlatformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstancePlatformView.h; sourceTree = "<group>"; };
 		A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstancePlatformView.m; sourceTree = "<group>"; };
 		A2E0218E20BE9113008EA624 /* TYInstancePlatformModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstancePlatformModel.h; sourceTree = "<group>"; };
@@ -152,6 +165,7 @@
 				A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */,
 				A2E0219920BEA2D0008EA624 /* TYInstanceLayoutView.h */,
 				A2E0219A20BEA2D0008EA624 /* TYInstanceLayoutView.m */,
+				A2A5D0E320BF98D600B31EE9 /* 1.png */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,8 +175,14 @@
 			children = (
 				A2E0218E20BE9113008EA624 /* TYInstancePlatformModel.h */,
 				A2E0218F20BE9113008EA624 /* TYInstancePlatformModel.m */,
+				A2A5D0EA20BF9E2300B31EE9 /* TYInstanceDataModel.h */,
+				A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */,
 				A2E0219120BE9189008EA624 /* TYModel.h */,
 				A2E0219220BE9189008EA624 /* TYModel.m */,
+				A2A5D0E720BF9BD900B31EE9 /* TYJsonData.h */,
+				A2A5D0E820BF9BD900B31EE9 /* TYJsonData.m */,
+				A2A5D0ED20BFA3B400B31EE9 /* TYCalculateFrameModel.h */,
+				A2A5D0EE20BFA3B400B31EE9 /* TYCalculateFrameModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +192,7 @@
 			children = (
 				A2E0219520BE98DC008EA624 /* content.json */,
 				A2E0219720BE9944008EA624 /* data.json */,
+				A2A5D0E520BF9AAB00B31EE9 /* contentData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -238,6 +259,8 @@
 				A282280F20BD2F0300219EAF /* Assets.xcassets in Resources */,
 				A2E0219620BE98DC008EA624 /* content.json in Resources */,
 				A2E0219820BE9944008EA624 /* data.json in Resources */,
+				A2A5D0E420BF98D600B31EE9 /* 1.png in Resources */,
+				A2A5D0E620BF9AAB00B31EE9 /* contentData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A5D0E920BF9BD900B31EE9 /* TYJsonData.m in Sources */,
 				A282283620BD30A600219EAF /* TYFrameworkViewController.m in Sources */,
 				A282283520BD30A600219EAF /* SKFFPSLabel.m in Sources */,
 				A2E0219320BE9189008EA624 /* TYModel.m in Sources */,
@@ -260,9 +284,11 @@
 				A282281E20BD306B00219EAF /* UIView+add.m in Sources */,
 				A282280420BD2F0300219EAF /* AppDelegate.m in Sources */,
 				A2E0219B20BEA2D0008EA624 /* TYInstanceLayoutView.m in Sources */,
+				A2A5D0EF20BFA3B400B31EE9 /* TYCalculateFrameModel.m in Sources */,
 				A282283820BD30A600219EAF /* TYCommonalityViewController.m in Sources */,
 				A2E0218C20BE8FDA008EA624 /* TYInstancePlatformView.m in Sources */,
 				A282282420BD307100219EAF /* TYLayoutView.m in Sources */,
+				A2A5D0EC20BF9E2300B31EE9 /* TYInstanceDataModel.m in Sources */,
 				A2E0219020BE9113008EA624 /* TYInstancePlatformModel.m in Sources */,
 				A282283B20BD30A600219EAF /* TYTableViewCell.m in Sources */,
 			);
