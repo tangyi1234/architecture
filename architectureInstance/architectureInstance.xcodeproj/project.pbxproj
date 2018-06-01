@@ -13,8 +13,6 @@
 		A282281220BD2F0300219EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A282281020BD2F0300219EAF /* LaunchScreen.storyboard */; };
 		A282281520BD2F0300219EAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A282281420BD2F0300219EAF /* main.m */; };
 		A282281E20BD306B00219EAF /* UIView+add.m in Sources */ = {isa = PBXBuildFile; fileRef = A282281D20BD306B00219EAF /* UIView+add.m */; };
-		A282282420BD307100219EAF /* TYLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = A282282120BD307100219EAF /* TYLayoutView.m */; };
-		A282282520BD307100219EAF /* TYPlatformView.m in Sources */ = {isa = PBXBuildFile; fileRef = A282282320BD307100219EAF /* TYPlatformView.m */; };
 		A282283520BD30A600219EAF /* SKFFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A282282A20BD30A500219EAF /* SKFFPSLabel.m */; };
 		A282283620BD30A600219EAF /* TYFrameworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A282282C20BD30A500219EAF /* TYFrameworkViewController.m */; };
 		A282283720BD30A600219EAF /* TYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A282282D20BD30A500219EAF /* TYViewController.m */; };
@@ -26,12 +24,10 @@
 		A2A5D0E620BF9AAB00B31EE9 /* contentData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2A5D0E520BF9AAB00B31EE9 /* contentData.json */; };
 		A2A5D0E920BF9BD900B31EE9 /* TYJsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0E820BF9BD900B31EE9 /* TYJsonData.m */; };
 		A2A5D0EC20BF9E2300B31EE9 /* TYInstanceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */; };
-		A2A5D0EF20BFA3B400B31EE9 /* TYCalculateFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0EE20BFA3B400B31EE9 /* TYCalculateFrameModel.m */; };
+		A2AC922420C0E37E0083D931 /* TYViewModelLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC922320C0E37E0083D931 /* TYViewModelLayout.m */; };
 		A2E0218C20BE8FDA008EA624 /* TYInstancePlatformView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */; };
-		A2E0219020BE9113008EA624 /* TYInstancePlatformModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0218F20BE9113008EA624 /* TYInstancePlatformModel.m */; };
 		A2E0219320BE9189008EA624 /* TYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0219220BE9189008EA624 /* TYModel.m */; };
 		A2E0219620BE98DC008EA624 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = A2E0219520BE98DC008EA624 /* content.json */; };
-		A2E0219820BE9944008EA624 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A2E0219720BE9944008EA624 /* data.json */; };
 		A2E0219B20BEA2D0008EA624 /* TYInstanceLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0219A20BEA2D0008EA624 /* TYInstanceLayoutView.m */; };
 /* End PBXBuildFile section */
 
@@ -46,10 +42,6 @@
 		A282281420BD2F0300219EAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A282281C20BD306B00219EAF /* UIView+add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+add.h"; sourceTree = "<group>"; };
 		A282281D20BD306B00219EAF /* UIView+add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+add.m"; sourceTree = "<group>"; };
-		A282282020BD307100219EAF /* TYLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLayoutView.h; sourceTree = "<group>"; };
-		A282282120BD307100219EAF /* TYLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLayoutView.m; sourceTree = "<group>"; };
-		A282282220BD307100219EAF /* TYPlatformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPlatformView.h; sourceTree = "<group>"; };
-		A282282320BD307100219EAF /* TYPlatformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPlatformView.m; sourceTree = "<group>"; };
 		A282282620BD30A500219EAF /* Introduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Introduction.h; sourceTree = "<group>"; };
 		A282282720BD30A500219EAF /* SKFFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFFPSLabel.h; sourceTree = "<group>"; };
 		A282282820BD30A500219EAF /* TYCommonalityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCommonalityViewController.h; sourceTree = "<group>"; };
@@ -71,16 +63,13 @@
 		A2A5D0E820BF9BD900B31EE9 /* TYJsonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYJsonData.m; sourceTree = "<group>"; };
 		A2A5D0EA20BF9E2300B31EE9 /* TYInstanceDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstanceDataModel.h; sourceTree = "<group>"; };
 		A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstanceDataModel.m; sourceTree = "<group>"; };
-		A2A5D0ED20BFA3B400B31EE9 /* TYCalculateFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYCalculateFrameModel.h; sourceTree = "<group>"; };
-		A2A5D0EE20BFA3B400B31EE9 /* TYCalculateFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYCalculateFrameModel.m; sourceTree = "<group>"; };
+		A2AC922220C0E37E0083D931 /* TYViewModelLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYViewModelLayout.h; sourceTree = "<group>"; };
+		A2AC922320C0E37E0083D931 /* TYViewModelLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYViewModelLayout.m; sourceTree = "<group>"; };
 		A2E0218A20BE8FDA008EA624 /* TYInstancePlatformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstancePlatformView.h; sourceTree = "<group>"; };
 		A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstancePlatformView.m; sourceTree = "<group>"; };
-		A2E0218E20BE9113008EA624 /* TYInstancePlatformModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstancePlatformModel.h; sourceTree = "<group>"; };
-		A2E0218F20BE9113008EA624 /* TYInstancePlatformModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstancePlatformModel.m; sourceTree = "<group>"; };
 		A2E0219120BE9189008EA624 /* TYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYModel.h; sourceTree = "<group>"; };
 		A2E0219220BE9189008EA624 /* TYModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYModel.m; sourceTree = "<group>"; };
 		A2E0219520BE98DC008EA624 /* content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
-		A2E0219720BE9944008EA624 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		A2E0219920BEA2D0008EA624 /* TYInstanceLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstanceLayoutView.h; sourceTree = "<group>"; };
 		A2E0219A20BEA2D0008EA624 /* TYInstanceLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstanceLayoutView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +120,7 @@
 				A282282D20BD30A500219EAF /* TYViewController.m */,
 				A282283420BD30A600219EAF /* ViewController.h */,
 				A282283120BD30A600219EAF /* ViewController.m */,
+				A2AC922120C0E2A20083D931 /* ModelLayout */,
 				A2E0219420BE9887008EA624 /* Data */,
 				A2E0218D20BE908C008EA624 /* Model */,
 				A282281F20BD307100219EAF /* View */,
@@ -157,10 +147,6 @@
 		A282281F20BD307100219EAF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A282282020BD307100219EAF /* TYLayoutView.h */,
-				A282282120BD307100219EAF /* TYLayoutView.m */,
-				A282282220BD307100219EAF /* TYPlatformView.h */,
-				A282282320BD307100219EAF /* TYPlatformView.m */,
 				A2E0218A20BE8FDA008EA624 /* TYInstancePlatformView.h */,
 				A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */,
 				A2E0219920BEA2D0008EA624 /* TYInstanceLayoutView.h */,
@@ -170,19 +156,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A2AC922120C0E2A20083D931 /* ModelLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A2AC922220C0E37E0083D931 /* TYViewModelLayout.h */,
+				A2AC922320C0E37E0083D931 /* TYViewModelLayout.m */,
+			);
+			path = ModelLayout;
+			sourceTree = "<group>";
+		};
 		A2E0218D20BE908C008EA624 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A2E0218E20BE9113008EA624 /* TYInstancePlatformModel.h */,
-				A2E0218F20BE9113008EA624 /* TYInstancePlatformModel.m */,
 				A2A5D0EA20BF9E2300B31EE9 /* TYInstanceDataModel.h */,
 				A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */,
 				A2E0219120BE9189008EA624 /* TYModel.h */,
 				A2E0219220BE9189008EA624 /* TYModel.m */,
 				A2A5D0E720BF9BD900B31EE9 /* TYJsonData.h */,
 				A2A5D0E820BF9BD900B31EE9 /* TYJsonData.m */,
-				A2A5D0ED20BFA3B400B31EE9 /* TYCalculateFrameModel.h */,
-				A2A5D0EE20BFA3B400B31EE9 /* TYCalculateFrameModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				A2E0219520BE98DC008EA624 /* content.json */,
-				A2E0219720BE9944008EA624 /* data.json */,
 				A2A5D0E520BF9AAB00B31EE9 /* contentData.json */,
 			);
 			path = Data;
@@ -258,7 +248,6 @@
 				A282281220BD2F0300219EAF /* LaunchScreen.storyboard in Resources */,
 				A282280F20BD2F0300219EAF /* Assets.xcassets in Resources */,
 				A2E0219620BE98DC008EA624 /* content.json in Resources */,
-				A2E0219820BE9944008EA624 /* data.json in Resources */,
 				A2A5D0E420BF98D600B31EE9 /* 1.png in Resources */,
 				A2A5D0E620BF9AAB00B31EE9 /* contentData.json in Resources */,
 			);
@@ -277,19 +266,16 @@
 				A2E0219320BE9189008EA624 /* TYModel.m in Sources */,
 				A282283720BD30A600219EAF /* TYViewController.m in Sources */,
 				A282280D20BD2F0300219EAF /* architectureInstance.xcdatamodeld in Sources */,
-				A282282520BD307100219EAF /* TYPlatformView.m in Sources */,
+				A2AC922420C0E37E0083D931 /* TYViewModelLayout.m in Sources */,
 				A282281520BD2F0300219EAF /* main.m in Sources */,
 				A282283A20BD30A600219EAF /* ViewController.m in Sources */,
 				A282283920BD30A600219EAF /* TYSubclassTableViewCell.m in Sources */,
 				A282281E20BD306B00219EAF /* UIView+add.m in Sources */,
 				A282280420BD2F0300219EAF /* AppDelegate.m in Sources */,
 				A2E0219B20BEA2D0008EA624 /* TYInstanceLayoutView.m in Sources */,
-				A2A5D0EF20BFA3B400B31EE9 /* TYCalculateFrameModel.m in Sources */,
 				A282283820BD30A600219EAF /* TYCommonalityViewController.m in Sources */,
 				A2E0218C20BE8FDA008EA624 /* TYInstancePlatformView.m in Sources */,
-				A282282420BD307100219EAF /* TYLayoutView.m in Sources */,
 				A2A5D0EC20BF9E2300B31EE9 /* TYInstanceDataModel.m in Sources */,
-				A2E0219020BE9113008EA624 /* TYInstancePlatformModel.m in Sources */,
 				A282283B20BD30A600219EAF /* TYTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

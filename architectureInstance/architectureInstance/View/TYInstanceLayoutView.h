@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TYInstanceLayoutView : UIView
-+ (instancetype)addInstanceLayoutView:(TYInstancePlatformModel *)model dataModel:(TYInstanceDataModel *)dataModel lblModel:(TYCalculateFrameModel *)lblModel;
++ (instancetype)addInstanceLayoutView:(TYInstanceDataModel *)dataModel;
 @end

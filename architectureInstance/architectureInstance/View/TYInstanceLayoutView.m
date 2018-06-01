@@ -9,48 +9,50 @@
 #import "TYInstanceLayoutView.h"
 
 @implementation TYInstanceLayoutView
-+ (instancetype)addInstanceLayoutView:(TYInstancePlatformModel *)model dataModel:(TYInstanceDataModel *)dataModel lblModel:(TYCalculateFrameModel *)lblModel {
++ (instancetype)addInstanceLayoutView:(TYInstanceDataModel *)dataModel {
     TYInstanceLayoutView *view = [TYInstanceLayoutView new];
     view.left = 0;
     view.top = 0;
     view.width = 320;
-    view.height = 500;
-    [view initViewModel:model dataModel:dataModel lblModel:lblModel];
+    view.height = 400 + [dataModel.sizes[@"height"] floatValue] + 90;
+    [view initViewDataModel:dataModel];
     return view;
 }
 
-- (void)initViewModel:(TYInstancePlatformModel *)model dataModel:(TYInstanceDataModel *)dataModel lblModel:(TYCalculateFrameModel *)lblModel {
+- (void)initViewDataModel:(TYInstanceDataModel *)dataModel {
     UIImageView *imageView = [UIImageView new];
-    imageView.left = [model.imageDic[@"left"] floatValue];
-    imageView.top = [model.imageDic[@"top"] floatValue];
-    imageView.width = [model.imageDic[@"width"] floatValue];
-    imageView.height = [model.imageDic[@"height"] floatValue];
+    imageView.left = 0;
+    imageView.top = 0;
+    imageView.width = w;
+    imageView.height = 400;
     NSString *filePath=[[NSBundle mainBundle] pathForResource:dataModel.image ofType:@"png"];
     imageView.image = [UIImage imageNamed:filePath];
     [self addSubview:imageView];
     
     UILabel *lbl = [UILabel new];
-    lbl.left = [lblModel.sizes[@"left"] floatValue];
+    lbl.left = [dataModel.sizes[@"left"] floatValue];
     lbl.top = imageView.top + imageView.height + 10;
-    lbl.width = [lblModel.sizes[@"width"] floatValue];
-    lbl.height = [lblModel.sizes[@"height"] floatValue];
+    lbl.width = [dataModel.sizes[@"width"] floatValue];
+    lbl.height = [dataModel.sizes[@"height"] floatValue];
     lbl.numberOfLines = 0;
     lbl.text = dataModel.textData;
     lbl.font = [UIFont systemFontOfSize:14];
     [self addSubview:lbl];
     
     UITextField *textField = [UITextField new];
-    textField.left = [model.textField[@"left"] floatValue];
+    textField.left = 0;
     textField.top = lbl.top + lbl.height + 10;
-    textField.width = [model.textField[@"width"] floatValue];
-    textField.height = [model.textField[@"height"] floatValue];
+    textField.width = 200;
+    textField.height = 50;
+    textField.backgroundColor = [UIColor yellowColor];
     [self addSubview:textField];
     
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
     but.left = textField.left + textField.width;
     but.top = lbl.top + lbl.height + 10;
-    but.width = [model.butDic[@"width"] floatValue];
-    but.height = [model.butDic[@"height"] floatValue];
+    but.width = 100;
+    but.height = 50;
+    but.backgroundColor = [UIColor redColor];
     [but setTitle:@"按钮" forState:UIControlStateNormal];
     [but addTarget:self action:@selector(selectorBut) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:but];

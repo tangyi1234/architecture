@@ -8,17 +8,16 @@
 
 #import "TYInstancePlatformView.h"
 @interface TYInstancePlatformView()
-@property (nonatomic, strong) TYInstancePlatformModel *model;
 @end
 @implementation TYInstancePlatformView
-+ (instancetype)addInstancePlatformView:(TYInstancePlatformModel *)model dataModel:(TYInstanceDataModel *)dataModel lblModel:(TYCalculateFrameModel *)lblModel{
++ (instancetype)addInstanceDataModel:(TYInstanceDataModel *)dataModel {
     TYInstancePlatformView *view = [TYInstancePlatformView new];
-    view.left = [model.templateDic[@"left"] floatValue];
-    view.top = [model.templateDic[@"top"] floatValue];
-    view.width = [model.templateDic[@"width"] floatValue];
-    view.height = [model.templateDic[@"height"] floatValue];
+    view.left = 0;
+    view.top = 0;
+    view.width = w;
+    view.height = 400 + [dataModel.sizes[@"height"] floatValue] + 90;
     view.backgroundColor = [UIColor greenColor];
-    [view addWithInstancePlatformView:model dataModel:dataModel lblModel:lblModel];
+    [view addWithInstanceDataModel:dataModel];
     return view;
 }
 
@@ -26,8 +25,8 @@
     
 }
 
-- (void)addWithInstancePlatformView:(TYInstancePlatformModel *)model dataModel:(TYInstanceDataModel *)dataModel lblModel:(TYCalculateFrameModel *)lblModel{
-    TYInstanceLayoutView *view = [TYInstanceLayoutView addInstanceLayoutView:model dataModel:dataModel lblModel:lblModel];
+- (void)addWithInstanceDataModel:(TYInstanceDataModel *)dataModel {
+    TYInstanceLayoutView *view = [TYInstanceLayoutView addInstanceLayoutView:dataModel];
     [self addSubview:view];
 }
 /*

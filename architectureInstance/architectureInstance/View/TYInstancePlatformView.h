@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TYInstancePlatformView : UIView
-+ (instancetype)addInstancePlatformView:(TYInstancePlatformModel *)model dataModel:(TYInstanceDataModel *)dataModel lblModel:(TYCalculateFrameModel *)lblModel;
++ (instancetype)addInstanceDataModel:(TYInstanceDataModel *)dataModel;
 @end

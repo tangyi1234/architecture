@@ -11,4 +11,5 @@
 @interface TYInstanceDataModel : TYModel
 @property (nonatomic, copy) NSString *image;
 @property (nonatomic, copy) NSString *textData;
+@property (nonatomic, strong) NSDictionary *sizes;
 @end

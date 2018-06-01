@@ -9,11 +9,12 @@
 #import "TYFrameworkViewController.h"
 #import "UIView+add.h"
 #import "TYInstancePlatformView.h"
-@interface TYFrameworkViewController ()
-@property (nonatomic, weak) TYPlatformView *platformView;
+#import "TYViewModelLayout.h"
+
+@interface TYFrameworkViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) NSMutableArray *updateArr;
 @property (nonatomic, strong) TYInstanceDataModel *dataModel;
-@property (nonatomic, strong) TYCalculateFrameModel *frameModel;
+@property (nonatomic, strong) UIScrollView *scrollView;
 @end
 
 @implementation TYFrameworkViewController
@@ -21,89 +22,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [self initView];
-    [self updateSqlData];
     [self gainWithJsonData];
-    [self initWithInstanceView];
-
+    [self initScrollView];
 }
 
-- (void)initView {
-    
-//    TYPlatformView *platformView = [TYPlatformView new];
-//    platformView.left = 0;
-//    platformView.top = 100;
-//    platformView.width = w;
-//    platformView.height = h - 100;
-//    platformView.backgroundColor = [UIColor greenColor];
-//    [self.view addSubview:_platformView = platformView];
-    
-    TYPlatformView *platformView = [TYPlatformView addPlatformView];
-    [self.view addSubview:_platformView = platformView];
-    
-    
-//    UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
-//    but.left = 10;
-//    but.top = 64;
-//    but.width = 100;
-//    but.height = 30;
-//    but.backgroundColor = [UIColor redColor];
-//    [but setTitle:@"点击看看" forState:UIControlStateNormal];
-//    [but addTarget:self action:@selector(selectorBut) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:but];
-    
-}
-
-- (void)selectorBut {
-    [_platformView addViewLayoutModel:@""];
+- (void)initScrollView {
+    _scrollView = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+    _scrollView.delegate = self;
+    [self.view addSubview:_scrollView];
 }
 
 - (void)initWithInstanceView {
-    TYInstancePlatformView *view = [TYInstancePlatformView addInstancePlatformView:_updateArr[0] dataModel:_dataModel lblModel:_frameModel];
-    [self.view addSubview:view];
+    TYInstancePlatformView *view = [TYInstancePlatformView addInstanceDataModel:_dataModel];
+    [_scrollView addSubview:view];
 }
 
-//布局数据
-- (void)updateSqlData {
-    NSArray *dataArr = [TYJsonData addJsonDataStr:@"data.json"];
-    _updateArr = [NSMutableArray array];
-    for (NSDictionary *dic in dataArr) {
-        TYInstancePlatformModel *model = [TYInstancePlatformModel addWithModelDic:dic];
-        [_updateArr addObject:model];
-    }
-}
 
 //内容数据
 - (void)gainWithJsonData {
-    NSArray *dataArr = [TYJsonData addJsonDataStr:@"contentData.json"];
-    //首先进行数据布局的计算
-    [self calculateWithLayou:dataArr[0]];
-    //这是RunLoop等待机制
-     [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-    
-    _dataModel = [TYInstanceDataModel addWithModelDic:dataArr[0]];
-}
-
-- (void)calculateWithLayou:(NSDictionary *)dic {
-    NSString *str = dic[@"textData"];
-    // 并发队列的创建方法
-    dispatch_queue_t queue = dispatch_queue_create("net.bujige.testQueue", DISPATCH_QUEUE_CONCURRENT);
-    //异步执行
-    dispatch_async(queue, ^{
-        //textData
-        CGSize size = [str sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(300,2000)];
-        //回归主线程中转模型
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            NSString *widthStr = [NSString stringWithFormat:@"%f",size.width];
-            NSString *heightStr = [NSString stringWithFormat:@"%f",size.height];
-            NSDictionary *dics = @{@"left":@"0",@"top":@"0",@"width":widthStr,@"height":heightStr};
-            NSDictionary *dic = @{@"sizes":dics};
-            _frameModel = [TYCalculateFrameModel addWithModelDic:dic];
-//            while (pageStillLoading) {
-           
-//            }
-        });
-    });
+    /*
+     这里在实际开发中其实是没有必要进行在后台来进行异步的计算，因为这个页面本来就运算量就小，在主线程中进行运算也是不会怎么影响操作效果的。也不会出现卡顿的情况，反而我们在这里开辟的新的线程这会导致我们的内存增加。
+     如果有必要进行开辟新线程，那么操作流程是先运算在进行进行转模型。
+     */
+    [TYViewModelLayout addWithViewModelLayoutStr:@"contentData.json" callback:^(TYInstanceDataModel *model) {
+        _dataModel = model;
+        //
+        CGSize size = CGSizeMake(w, 400 + [model.sizes[@"height"] floatValue] + 90);
+        _scrollView.contentSize = size;
+        [self initWithInstanceView];
+    }];
+  
 }
 
 - (void)didReceiveMemoryWarning {
