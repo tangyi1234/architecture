@@ -25,6 +25,39 @@
 		A2A5D0E920BF9BD900B31EE9 /* TYJsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0E820BF9BD900B31EE9 /* TYJsonData.m */; };
 		A2A5D0EC20BF9E2300B31EE9 /* TYInstanceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */; };
 		A2AC922420C0E37E0083D931 /* TYViewModelLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC922320C0E37E0083D931 /* TYViewModelLayout.m */; };
+		A2B7A78E20C4DA5800003BBF /* TYInstancaProcessData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7A78D20C4DA5800003BBF /* TYInstancaProcessData.m */; };
+		A2B7A79120C51D6900003BBF /* TYFrameworkCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7A79020C51D6900003BBF /* TYFrameworkCellViewController.m */; };
+		A2B7A79420C52A5E00003BBF /* TYFrameworkCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7A79320C52A5E00003BBF /* TYFrameworkCellTableViewCell.m */; };
+		A2B7A79720C52BCB00003BBF /* TYFrameworkCellLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7A79620C52BCB00003BBF /* TYFrameworkCellLayoutView.m */; };
+		A2B7A79A20C534A100003BBF /* TYFrameworkCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7A79920C534A100003BBF /* TYFrameworkCellModel.m */; };
+		A2B7A79C20C534E600003BBF /* frameworkContent.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A79B20C534E600003BBF /* frameworkContent.json */; };
+		A2B7A7B820C53CF800003BBF /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A79E20C53CF700003BBF /* 14.png */; };
+		A2B7A7B920C53CF800003BBF /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A79F20C53CF700003BBF /* 23.png */; };
+		A2B7A7BA20C53CF800003BBF /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A020C53CF700003BBF /* 13.png */; };
+		A2B7A7BB20C53CF800003BBF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A120C53CF700003BBF /* 2.png */; };
+		A2B7A7BC20C53CF800003BBF /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A220C53CF700003BBF /* 9.png */; };
+		A2B7A7BD20C53CF800003BBF /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A320C53CF700003BBF /* 10.png */; };
+		A2B7A7BE20C53CF800003BBF /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A420C53CF700003BBF /* 20.png */; };
+		A2B7A7BF20C53CF800003BBF /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A520C53CF700003BBF /* 11.png */; };
+		A2B7A7C020C53CF800003BBF /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A620C53CF700003BBF /* 21.png */; };
+		A2B7A7C120C53CF800003BBF /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A720C53CF800003BBF /* 5.png */; };
+		A2B7A7C220C53CF800003BBF /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A820C53CF800003BBF /* 6.png */; };
+		A2B7A7C320C53CF800003BBF /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7A920C53CF800003BBF /* 16.png */; };
+		A2B7A7C420C53CF800003BBF /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7AA20C53CF800003BBF /* 4.png */; };
+		A2B7A7C520C53CF800003BBF /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7AB20C53CF800003BBF /* 18.png */; };
+		A2B7A7C620C53CF800003BBF /* 26.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7AC20C53CF800003BBF /* 26.png */; };
+		A2B7A7C720C53CF800003BBF /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7AD20C53CF800003BBF /* 3.jpg */; };
+		A2B7A7C820C53CF800003BBF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7AE20C53CF800003BBF /* 1.png */; };
+		A2B7A7C920C53CF800003BBF /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7AF20C53CF800003BBF /* 15.png */; };
+		A2B7A7CA20C53CF800003BBF /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7B020C53CF800003BBF /* 8.png */; };
+		A2B7A7CB20C53CF800003BBF /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7B120C53CF800003BBF /* 25.png */; };
+		A2B7A7CC20C53CF800003BBF /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7B220C53CF800003BBF /* 7.png */; };
+		A2B7A7CD20C53CF800003BBF /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7B320C53CF800003BBF /* 12.png */; };
+		A2B7A7CE20C53CF800003BBF /* 17.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7B420C53CF800003BBF /* 17.png */; };
+		A2B7A7CF20C53CF800003BBF /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7B520C53CF800003BBF /* 22.png */; };
+		A2B7A7D020C53CF800003BBF /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7B620C53CF800003BBF /* 24.png */; };
+		A2B7A7D120C53CF800003BBF /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = A2B7A7B720C53CF800003BBF /* 19.png */; };
+		A2B7A7D420C5447D00003BBF /* TYFrameworkModelLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7A7D320C5447D00003BBF /* TYFrameworkModelLayout.m */; };
 		A2E0218C20BE8FDA008EA624 /* TYInstancePlatformView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */; };
 		A2E0219320BE9189008EA624 /* TYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0219220BE9189008EA624 /* TYModel.m */; };
 		A2E0219620BE98DC008EA624 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = A2E0219520BE98DC008EA624 /* content.json */; };
@@ -65,6 +98,45 @@
 		A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstanceDataModel.m; sourceTree = "<group>"; };
 		A2AC922220C0E37E0083D931 /* TYViewModelLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYViewModelLayout.h; sourceTree = "<group>"; };
 		A2AC922320C0E37E0083D931 /* TYViewModelLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYViewModelLayout.m; sourceTree = "<group>"; };
+		A2B7A78C20C4DA5800003BBF /* TYInstancaProcessData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstancaProcessData.h; sourceTree = "<group>"; };
+		A2B7A78D20C4DA5800003BBF /* TYInstancaProcessData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstancaProcessData.m; sourceTree = "<group>"; };
+		A2B7A78F20C51D6900003BBF /* TYFrameworkCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYFrameworkCellViewController.h; sourceTree = "<group>"; };
+		A2B7A79020C51D6900003BBF /* TYFrameworkCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYFrameworkCellViewController.m; sourceTree = "<group>"; };
+		A2B7A79220C52A5E00003BBF /* TYFrameworkCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYFrameworkCellTableViewCell.h; sourceTree = "<group>"; };
+		A2B7A79320C52A5E00003BBF /* TYFrameworkCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYFrameworkCellTableViewCell.m; sourceTree = "<group>"; };
+		A2B7A79520C52BCB00003BBF /* TYFrameworkCellLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYFrameworkCellLayoutView.h; sourceTree = "<group>"; };
+		A2B7A79620C52BCB00003BBF /* TYFrameworkCellLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYFrameworkCellLayoutView.m; sourceTree = "<group>"; };
+		A2B7A79820C534A100003BBF /* TYFrameworkCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYFrameworkCellModel.h; sourceTree = "<group>"; };
+		A2B7A79920C534A100003BBF /* TYFrameworkCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYFrameworkCellModel.m; sourceTree = "<group>"; };
+		A2B7A79B20C534E600003BBF /* frameworkContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = frameworkContent.json; sourceTree = "<group>"; };
+		A2B7A79E20C53CF700003BBF /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		A2B7A79F20C53CF700003BBF /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		A2B7A7A020C53CF700003BBF /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		A2B7A7A120C53CF700003BBF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		A2B7A7A220C53CF700003BBF /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		A2B7A7A320C53CF700003BBF /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		A2B7A7A420C53CF700003BBF /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		A2B7A7A520C53CF700003BBF /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		A2B7A7A620C53CF700003BBF /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		A2B7A7A720C53CF800003BBF /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		A2B7A7A820C53CF800003BBF /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		A2B7A7A920C53CF800003BBF /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		A2B7A7AA20C53CF800003BBF /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		A2B7A7AB20C53CF800003BBF /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		A2B7A7AC20C53CF800003BBF /* 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26.png; sourceTree = "<group>"; };
+		A2B7A7AD20C53CF800003BBF /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		A2B7A7AE20C53CF800003BBF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		A2B7A7AF20C53CF800003BBF /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		A2B7A7B020C53CF800003BBF /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		A2B7A7B120C53CF800003BBF /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		A2B7A7B220C53CF800003BBF /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		A2B7A7B320C53CF800003BBF /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		A2B7A7B420C53CF800003BBF /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		A2B7A7B520C53CF800003BBF /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		A2B7A7B620C53CF800003BBF /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		A2B7A7B720C53CF800003BBF /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
+		A2B7A7D220C5447D00003BBF /* TYFrameworkModelLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYFrameworkModelLayout.h; sourceTree = "<group>"; };
+		A2B7A7D320C5447D00003BBF /* TYFrameworkModelLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYFrameworkModelLayout.m; sourceTree = "<group>"; };
 		A2E0218A20BE8FDA008EA624 /* TYInstancePlatformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInstancePlatformView.h; sourceTree = "<group>"; };
 		A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInstancePlatformView.m; sourceTree = "<group>"; };
 		A2E0219120BE9189008EA624 /* TYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYModel.h; sourceTree = "<group>"; };
@@ -112,6 +184,8 @@
 				A282282F20BD30A500219EAF /* TYCommonalityViewController.m */,
 				A282282920BD30A500219EAF /* TYFrameworkViewController.h */,
 				A282282C20BD30A500219EAF /* TYFrameworkViewController.m */,
+				A2B7A78F20C51D6900003BBF /* TYFrameworkCellViewController.h */,
+				A2B7A79020C51D6900003BBF /* TYFrameworkCellViewController.m */,
 				A282282B20BD30A500219EAF /* TYSubclassTableViewCell.h */,
 				A282283020BD30A600219EAF /* TYSubclassTableViewCell.m */,
 				A282283220BD30A600219EAF /* TYTableViewCell.h */,
@@ -125,6 +199,7 @@
 				A2E0218D20BE908C008EA624 /* Model */,
 				A282281F20BD307100219EAF /* View */,
 				A282281B20BD306B00219EAF /* layout */,
+				A2B7A79D20C53CB000003BBF /* Material */,
 				A282280E20BD2F0300219EAF /* Assets.xcassets */,
 				A282281020BD2F0300219EAF /* LaunchScreen.storyboard */,
 				A282281320BD2F0300219EAF /* Info.plist */,
@@ -147,10 +222,15 @@
 		A282281F20BD307100219EAF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A2B7A78B20C4D9F500003BBF /* ProcessData */,
 				A2E0218A20BE8FDA008EA624 /* TYInstancePlatformView.h */,
 				A2E0218B20BE8FDA008EA624 /* TYInstancePlatformView.m */,
 				A2E0219920BEA2D0008EA624 /* TYInstanceLayoutView.h */,
 				A2E0219A20BEA2D0008EA624 /* TYInstanceLayoutView.m */,
+				A2B7A79220C52A5E00003BBF /* TYFrameworkCellTableViewCell.h */,
+				A2B7A79320C52A5E00003BBF /* TYFrameworkCellTableViewCell.m */,
+				A2B7A79520C52BCB00003BBF /* TYFrameworkCellLayoutView.h */,
+				A2B7A79620C52BCB00003BBF /* TYFrameworkCellLayoutView.m */,
 				A2A5D0E320BF98D600B31EE9 /* 1.png */,
 			);
 			path = View;
@@ -161,8 +241,52 @@
 			children = (
 				A2AC922220C0E37E0083D931 /* TYViewModelLayout.h */,
 				A2AC922320C0E37E0083D931 /* TYViewModelLayout.m */,
+				A2B7A7D220C5447D00003BBF /* TYFrameworkModelLayout.h */,
+				A2B7A7D320C5447D00003BBF /* TYFrameworkModelLayout.m */,
 			);
 			path = ModelLayout;
+			sourceTree = "<group>";
+		};
+		A2B7A78B20C4D9F500003BBF /* ProcessData */ = {
+			isa = PBXGroup;
+			children = (
+				A2B7A78C20C4DA5800003BBF /* TYInstancaProcessData.h */,
+				A2B7A78D20C4DA5800003BBF /* TYInstancaProcessData.m */,
+			);
+			path = ProcessData;
+			sourceTree = "<group>";
+		};
+		A2B7A79D20C53CB000003BBF /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				A2B7A7AE20C53CF800003BBF /* 1.png */,
+				A2B7A7A120C53CF700003BBF /* 2.png */,
+				A2B7A7AD20C53CF800003BBF /* 3.jpg */,
+				A2B7A7AA20C53CF800003BBF /* 4.png */,
+				A2B7A7A720C53CF800003BBF /* 5.png */,
+				A2B7A7A820C53CF800003BBF /* 6.png */,
+				A2B7A7B220C53CF800003BBF /* 7.png */,
+				A2B7A7B020C53CF800003BBF /* 8.png */,
+				A2B7A7A220C53CF700003BBF /* 9.png */,
+				A2B7A7A320C53CF700003BBF /* 10.png */,
+				A2B7A7A520C53CF700003BBF /* 11.png */,
+				A2B7A7B320C53CF800003BBF /* 12.png */,
+				A2B7A7A020C53CF700003BBF /* 13.png */,
+				A2B7A79E20C53CF700003BBF /* 14.png */,
+				A2B7A7AF20C53CF800003BBF /* 15.png */,
+				A2B7A7A920C53CF800003BBF /* 16.png */,
+				A2B7A7B420C53CF800003BBF /* 17.png */,
+				A2B7A7AB20C53CF800003BBF /* 18.png */,
+				A2B7A7B720C53CF800003BBF /* 19.png */,
+				A2B7A7A420C53CF700003BBF /* 20.png */,
+				A2B7A7A620C53CF700003BBF /* 21.png */,
+				A2B7A7B520C53CF800003BBF /* 22.png */,
+				A2B7A79F20C53CF700003BBF /* 23.png */,
+				A2B7A7B620C53CF800003BBF /* 24.png */,
+				A2B7A7B120C53CF800003BBF /* 25.png */,
+				A2B7A7AC20C53CF800003BBF /* 26.png */,
+			);
+			path = Material;
 			sourceTree = "<group>";
 		};
 		A2E0218D20BE908C008EA624 /* Model */ = {
@@ -170,6 +294,8 @@
 			children = (
 				A2A5D0EA20BF9E2300B31EE9 /* TYInstanceDataModel.h */,
 				A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */,
+				A2B7A79820C534A100003BBF /* TYFrameworkCellModel.h */,
+				A2B7A79920C534A100003BBF /* TYFrameworkCellModel.m */,
 				A2E0219120BE9189008EA624 /* TYModel.h */,
 				A2E0219220BE9189008EA624 /* TYModel.m */,
 				A2A5D0E720BF9BD900B31EE9 /* TYJsonData.h */,
@@ -183,6 +309,7 @@
 			children = (
 				A2E0219520BE98DC008EA624 /* content.json */,
 				A2A5D0E520BF9AAB00B31EE9 /* contentData.json */,
+				A2B7A79B20C534E600003BBF /* frameworkContent.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -245,10 +372,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B7A7CC20C53CF800003BBF /* 7.png in Resources */,
+				A2B7A7CB20C53CF800003BBF /* 25.png in Resources */,
+				A2B7A7D020C53CF800003BBF /* 24.png in Resources */,
+				A2B7A7D120C53CF800003BBF /* 19.png in Resources */,
+				A2B7A7BE20C53CF800003BBF /* 20.png in Resources */,
+				A2B7A7BC20C53CF800003BBF /* 9.png in Resources */,
+				A2B7A7CE20C53CF800003BBF /* 17.png in Resources */,
+				A2B7A79C20C534E600003BBF /* frameworkContent.json in Resources */,
+				A2B7A7C620C53CF800003BBF /* 26.png in Resources */,
+				A2B7A7BD20C53CF800003BBF /* 10.png in Resources */,
 				A282281220BD2F0300219EAF /* LaunchScreen.storyboard in Resources */,
+				A2B7A7C020C53CF800003BBF /* 21.png in Resources */,
+				A2B7A7C220C53CF800003BBF /* 6.png in Resources */,
+				A2B7A7BF20C53CF800003BBF /* 11.png in Resources */,
+				A2B7A7C320C53CF800003BBF /* 16.png in Resources */,
+				A2B7A7CA20C53CF800003BBF /* 8.png in Resources */,
+				A2B7A7BB20C53CF800003BBF /* 2.png in Resources */,
+				A2B7A7C720C53CF800003BBF /* 3.jpg in Resources */,
+				A2B7A7C520C53CF800003BBF /* 18.png in Resources */,
+				A2B7A7CD20C53CF800003BBF /* 12.png in Resources */,
+				A2B7A7BA20C53CF800003BBF /* 13.png in Resources */,
 				A282280F20BD2F0300219EAF /* Assets.xcassets in Resources */,
+				A2B7A7C920C53CF800003BBF /* 15.png in Resources */,
+				A2B7A7B820C53CF800003BBF /* 14.png in Resources */,
+				A2B7A7C420C53CF800003BBF /* 4.png in Resources */,
 				A2E0219620BE98DC008EA624 /* content.json in Resources */,
 				A2A5D0E420BF98D600B31EE9 /* 1.png in Resources */,
+				A2B7A7CF20C53CF800003BBF /* 22.png in Resources */,
+				A2B7A7C120C53CF800003BBF /* 5.png in Resources */,
+				A2B7A7C820C53CF800003BBF /* 1.png in Resources */,
+				A2B7A7B920C53CF800003BBF /* 23.png in Resources */,
 				A2A5D0E620BF9AAB00B31EE9 /* contentData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,19 +416,25 @@
 			files = (
 				A2A5D0E920BF9BD900B31EE9 /* TYJsonData.m in Sources */,
 				A282283620BD30A600219EAF /* TYFrameworkViewController.m in Sources */,
+				A2B7A79720C52BCB00003BBF /* TYFrameworkCellLayoutView.m in Sources */,
 				A282283520BD30A600219EAF /* SKFFPSLabel.m in Sources */,
 				A2E0219320BE9189008EA624 /* TYModel.m in Sources */,
 				A282283720BD30A600219EAF /* TYViewController.m in Sources */,
 				A282280D20BD2F0300219EAF /* architectureInstance.xcdatamodeld in Sources */,
 				A2AC922420C0E37E0083D931 /* TYViewModelLayout.m in Sources */,
 				A282281520BD2F0300219EAF /* main.m in Sources */,
+				A2B7A79120C51D6900003BBF /* TYFrameworkCellViewController.m in Sources */,
 				A282283A20BD30A600219EAF /* ViewController.m in Sources */,
 				A282283920BD30A600219EAF /* TYSubclassTableViewCell.m in Sources */,
+				A2B7A79420C52A5E00003BBF /* TYFrameworkCellTableViewCell.m in Sources */,
 				A282281E20BD306B00219EAF /* UIView+add.m in Sources */,
 				A282280420BD2F0300219EAF /* AppDelegate.m in Sources */,
 				A2E0219B20BEA2D0008EA624 /* TYInstanceLayoutView.m in Sources */,
+				A2B7A78E20C4DA5800003BBF /* TYInstancaProcessData.m in Sources */,
+				A2B7A79A20C534A100003BBF /* TYFrameworkCellModel.m in Sources */,
 				A282283820BD30A600219EAF /* TYCommonalityViewController.m in Sources */,
 				A2E0218C20BE8FDA008EA624 /* TYInstancePlatformView.m in Sources */,
+				A2B7A7D420C5447D00003BBF /* TYFrameworkModelLayout.m in Sources */,
 				A2A5D0EC20BF9E2300B31EE9 /* TYInstanceDataModel.m in Sources */,
 				A282283B20BD30A600219EAF /* TYTableViewCell.m in Sources */,
 			);

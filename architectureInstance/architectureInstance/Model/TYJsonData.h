@@ -10,4 +10,5 @@
 
 @interface TYJsonData : NSObject
 + (NSArray *)addJsonDataStr:(NSString *)str;
++ (CGSize)addWithCalculateHeightStr:(NSString *)str;
 @end

@@ -19,4 +19,9 @@
     NSArray *dataArr = [NSArray arrayWithArray:dic[@"json"]];
     return dataArr;
 }
+
++ (CGSize)addWithCalculateHeightStr:(NSString *)str {
+    CGSize size = [str sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(w,2000)];
+    return size;
+}
 @end

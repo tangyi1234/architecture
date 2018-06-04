@@ -7,19 +7,22 @@
 //
 
 #import "TYInstanceLayoutView.h"
-
+@interface TYInstanceLayoutView()<UITextFieldDelegate>
+@property (nonatomic, weak) UITextField *textField;
+@property (nonatomic, strong) dealBlock deals;
+@end
 @implementation TYInstanceLayoutView
-+ (instancetype)addInstanceLayoutView:(TYInstanceDataModel *)dataModel {
++ (instancetype)addInstanceLayoutView:(TYInstanceDataModel *)dataModel{
     TYInstanceLayoutView *view = [TYInstanceLayoutView new];
     view.left = 0;
     view.top = 0;
     view.width = 320;
     view.height = 400 + [dataModel.sizes[@"height"] floatValue] + 90;
-    [view initViewDataModel:dataModel];
     return view;
 }
 
-- (void)initViewDataModel:(TYInstanceDataModel *)dataModel {
+- (void)initViewDataModel:(TYInstanceDataModel *)dataModel dealBlock:(dealBlock)deal{
+    _deals = deal;
     UIImageView *imageView = [UIImageView new];
     imageView.left = 0;
     imageView.top = 0;
@@ -45,7 +48,7 @@
     textField.width = 200;
     textField.height = 50;
     textField.backgroundColor = [UIColor yellowColor];
-    [self addSubview:textField];
+    [self addSubview:_textField = textField];
     
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
     but.left = textField.left + textField.width;
@@ -58,9 +61,21 @@
     [self addSubview:but];
 }
 
-- (void)selectorBut {
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
+    return YES;
 }
+
+- (void)selectorBut {
+    if (_deals) {
+        _deals(1);
+    }
+}
+
+- (void)whetherHideWithTextField:(BOOL)boo {
+    _textField.hidden = boo;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

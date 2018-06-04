@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^dealBlock) (int deal);
 @interface TYInstanceLayoutView : UIView
+
 + (instancetype)addInstanceLayoutView:(TYInstanceDataModel *)dataModel;
+- (void)initViewDataModel:(TYInstanceDataModel *)dataModel dealBlock:(dealBlock)deal;
+- (void)whetherHideWithTextField:(BOOL)boo;
 @end
