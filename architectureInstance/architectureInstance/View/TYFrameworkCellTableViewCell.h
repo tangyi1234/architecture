@@ -10,4 +10,5 @@
 
 @interface TYFrameworkCellTableViewCell : UITableViewCell
 + (instancetype)addFrameworkCellTableViewCell:(UITableView *)tableView;
+- (void)introductionWithData:(TYFrameworkCellModel *)model;
 @end

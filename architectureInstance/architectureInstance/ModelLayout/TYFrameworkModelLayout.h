@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TYFrameworkCellModel.h"
-typedef void (^frameworkModelLayoutBlock) (TYFrameworkCellModel *model);
+typedef void (^frameworkModelLayoutBlock) (NSMutableArray *mutableArr);
 @interface TYFrameworkModelLayout : NSObject
 + (void)addWithFrameworkModelLayoutStr:(NSString *)str frameworkModel:(frameworkModelLayoutBlock)frameworkModel;
 @end

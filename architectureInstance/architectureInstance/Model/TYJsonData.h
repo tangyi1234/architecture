@@ -11,4 +11,5 @@
 @interface TYJsonData : NSObject
 + (NSArray *)addJsonDataStr:(NSString *)str;
 + (CGSize)addWithCalculateHeightStr:(NSString *)str;
++ (UIImage *)addWithFilePathStr:(NSString *)str;
 @end

@@ -18,6 +18,7 @@
 
 #import "TYModel.h"
 #import "TYInstanceDataModel.h"
+#import "TYFrameworkCellModel.h"
 
 
 #import "TYInstanceLayoutView.h"

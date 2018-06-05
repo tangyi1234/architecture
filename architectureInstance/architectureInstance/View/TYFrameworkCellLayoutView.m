@@ -27,9 +27,11 @@
     UILabel *lbl = [UILabel new];
     lbl.font = [UIFont systemFontOfSize:14];
     lbl.textAlignment = NSTextAlignmentLeft;
+    lbl.numberOfLines = 0;
     [self addSubview:_lbl = lbl];
     
     UITextField *textField = [UITextField new];
+    textField.placeholder = @"请输入";
     [self addSubview:_textField = textField];
     
     UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -39,7 +41,29 @@
     [self addSubview:_but = but];
 }
 
-- (void)addWithLayout {
+- (void)addWithLayoutModel:(TYFrameworkCellModel *)model {
+    _imageView.left = 0;
+    _imageView.top = 0;
+    _imageView.width = w;
+    _imageView.height = 400;
+    
+    _lbl.left = 0;
+    _lbl.top = _imageView.height + 5;
+    _lbl.width = w;
+    _lbl.height = [model.lblHeight floatValue];
+    
+    _textField.left = 0;
+    _textField.top = _lbl.top + _lbl.height + 5;
+    _textField.width = 300;
+    _textField.height = 50;
+    
+    _but.left = _textField.width +10;
+    _but.top = _lbl.top + _lbl.height + 5;
+    _but.width = 100;
+    _but.height = 50;
+    
+    _imageView.image = [TYJsonData addWithFilePathStr:model.imageName];
+    _lbl.text = model.lblContent;
     
 }
 

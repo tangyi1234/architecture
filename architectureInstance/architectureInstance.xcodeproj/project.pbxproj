@@ -20,6 +20,11 @@
 		A282283920BD30A600219EAF /* TYSubclassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A282283020BD30A600219EAF /* TYSubclassTableViewCell.m */; };
 		A282283A20BD30A600219EAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A282283120BD30A600219EAF /* ViewController.m */; };
 		A282283B20BD30A600219EAF /* TYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A282283320BD30A600219EAF /* TYTableViewCell.m */; };
+		A285E61020C63A490086D15A /* cellData.json in Resources */ = {isa = PBXBuildFile; fileRef = A285E60F20C63A490086D15A /* cellData.json */; };
+		A285E61220C6721E0086D15A /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = A285E61120C6721D0086D15A /* 0.png */; };
+		A285E61520C6722B0086D15A /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = A285E61320C6722A0086D15A /* 28.png */; };
+		A285E61620C6722B0086D15A /* 27.png in Resources */ = {isa = PBXBuildFile; fileRef = A285E61420C6722A0086D15A /* 27.png */; };
+		A285E61920C6808B0086D15A /* TYImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A285E61820C6808B0086D15A /* TYImageViewViewController.m */; };
 		A2A5D0E420BF98D600B31EE9 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A2A5D0E320BF98D600B31EE9 /* 1.png */; };
 		A2A5D0E620BF9AAB00B31EE9 /* contentData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2A5D0E520BF9AAB00B31EE9 /* contentData.json */; };
 		A2A5D0E920BF9BD900B31EE9 /* TYJsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5D0E820BF9BD900B31EE9 /* TYJsonData.m */; };
@@ -90,6 +95,12 @@
 		A282283220BD30A600219EAF /* TYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableViewCell.h; sourceTree = "<group>"; };
 		A282283320BD30A600219EAF /* TYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableViewCell.m; sourceTree = "<group>"; };
 		A282283420BD30A600219EAF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A285E60F20C63A490086D15A /* cellData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cellData.json; sourceTree = "<group>"; };
+		A285E61120C6721D0086D15A /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		A285E61320C6722A0086D15A /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28.png; sourceTree = "<group>"; };
+		A285E61420C6722A0086D15A /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 27.png; sourceTree = "<group>"; };
+		A285E61720C6808B0086D15A /* TYImageViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYImageViewViewController.h; sourceTree = "<group>"; };
+		A285E61820C6808B0086D15A /* TYImageViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYImageViewViewController.m; sourceTree = "<group>"; };
 		A2A5D0E320BF98D600B31EE9 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		A2A5D0E520BF9AAB00B31EE9 /* contentData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contentData.json; sourceTree = "<group>"; };
 		A2A5D0E720BF9BD900B31EE9 /* TYJsonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYJsonData.h; sourceTree = "<group>"; };
@@ -188,6 +199,8 @@
 				A2B7A79020C51D6900003BBF /* TYFrameworkCellViewController.m */,
 				A282282B20BD30A500219EAF /* TYSubclassTableViewCell.h */,
 				A282283020BD30A600219EAF /* TYSubclassTableViewCell.m */,
+				A285E61720C6808B0086D15A /* TYImageViewViewController.h */,
+				A285E61820C6808B0086D15A /* TYImageViewViewController.m */,
 				A282283220BD30A600219EAF /* TYTableViewCell.h */,
 				A282283320BD30A600219EAF /* TYTableViewCell.m */,
 				A282282E20BD30A500219EAF /* TYViewController.h */,
@@ -259,6 +272,7 @@
 		A2B7A79D20C53CB000003BBF /* Material */ = {
 			isa = PBXGroup;
 			children = (
+				A285E61120C6721D0086D15A /* 0.png */,
 				A2B7A7AE20C53CF800003BBF /* 1.png */,
 				A2B7A7A120C53CF700003BBF /* 2.png */,
 				A2B7A7AD20C53CF800003BBF /* 3.jpg */,
@@ -285,6 +299,8 @@
 				A2B7A7B620C53CF800003BBF /* 24.png */,
 				A2B7A7B120C53CF800003BBF /* 25.png */,
 				A2B7A7AC20C53CF800003BBF /* 26.png */,
+				A285E61420C6722A0086D15A /* 27.png */,
+				A285E61320C6722A0086D15A /* 28.png */,
 			);
 			path = Material;
 			sourceTree = "<group>";
@@ -310,6 +326,7 @@
 				A2E0219520BE98DC008EA624 /* content.json */,
 				A2A5D0E520BF9AAB00B31EE9 /* contentData.json */,
 				A2B7A79B20C534E600003BBF /* frameworkContent.json */,
+				A285E60F20C63A490086D15A /* cellData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -372,7 +389,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A285E61220C6721E0086D15A /* 0.png in Resources */,
 				A2B7A7CC20C53CF800003BBF /* 7.png in Resources */,
+				A285E61620C6722B0086D15A /* 27.png in Resources */,
 				A2B7A7CB20C53CF800003BBF /* 25.png in Resources */,
 				A2B7A7D020C53CF800003BBF /* 24.png in Resources */,
 				A2B7A7D120C53CF800003BBF /* 19.png in Resources */,
@@ -396,6 +415,7 @@
 				A282280F20BD2F0300219EAF /* Assets.xcassets in Resources */,
 				A2B7A7C920C53CF800003BBF /* 15.png in Resources */,
 				A2B7A7B820C53CF800003BBF /* 14.png in Resources */,
+				A285E61520C6722B0086D15A /* 28.png in Resources */,
 				A2B7A7C420C53CF800003BBF /* 4.png in Resources */,
 				A2E0219620BE98DC008EA624 /* content.json in Resources */,
 				A2A5D0E420BF98D600B31EE9 /* 1.png in Resources */,
@@ -403,6 +423,7 @@
 				A2B7A7C120C53CF800003BBF /* 5.png in Resources */,
 				A2B7A7C820C53CF800003BBF /* 1.png in Resources */,
 				A2B7A7B920C53CF800003BBF /* 23.png in Resources */,
+				A285E61020C63A490086D15A /* cellData.json in Resources */,
 				A2A5D0E620BF9AAB00B31EE9 /* contentData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A285E61920C6808B0086D15A /* TYImageViewViewController.m in Sources */,
 				A2A5D0E920BF9BD900B31EE9 /* TYJsonData.m in Sources */,
 				A282283620BD30A600219EAF /* TYFrameworkViewController.m in Sources */,
 				A2B7A79720C52BCB00003BBF /* TYFrameworkCellLayoutView.m in Sources */,

@@ -24,4 +24,10 @@
     CGSize size = [str sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(w,2000)];
     return size;
 }
+
++ (UIImage *)addWithFilePathStr:(NSString *)str {
+    NSString *filePath=[[NSBundle mainBundle] pathForResource:str ofType:@"png"];
+    return [UIImage imageNamed:filePath];
+}
+
 @end

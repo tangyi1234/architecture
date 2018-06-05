@@ -10,9 +10,13 @@
 
 @implementation TYFrameworkModelLayout
 + (void)addWithFrameworkModelLayoutStr:(NSString *)str frameworkModel:(frameworkModelLayoutBlock)frameworkModel {
+    NSMutableArray *muArr = [NSMutableArray array];
     NSArray *arr = [TYJsonData addJsonDataStr:str];
-    for (NSDictionary *dic in arr) {
+    NSLog(@"这里有数据没有:%lu",(unsigned long)arr.count);
+    for (int i = 0; i < arr.count; i++) {
+        NSDictionary *dic = arr[i];
         NSString *contentStr = dic[@"lblContent"];
+        NSLog(@"获取到的文字:%@",contentStr);
         dispatch_queue_t queue = dispatch_queue_create("frameworkModelLayout", DISPATCH_QUEUE_CONCURRENT);
         //异步并发执行
         dispatch_async(queue, ^{
@@ -24,11 +28,16 @@
                 [mutbleDic setValue:viewHeight forKey:@"viewHeight"];
                 [mutbleDic setValue:heightStr forKey:@"lblHeight"];
                 TYFrameworkCellModel *models = [TYFrameworkCellModel addWithModelDic:mutbleDic];
-                if (models) {
-                    frameworkModelLayoutBlock(models);
+                [muArr addObject:models];
+                if (i == arr.count - 1) {
+                    if (models) {
+                        frameworkModel(muArr);
+                    }
                 }
+                
             });
         });
     }
+    
 }
 @end
