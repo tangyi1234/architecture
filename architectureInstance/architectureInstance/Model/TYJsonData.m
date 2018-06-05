@@ -30,4 +30,9 @@
     return [UIImage imageNamed:filePath];
 }
 
++ (UIImage *)addWithRequestStr:(NSString *)url {
+    NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
+    return [UIImage imageWithData:data];
+}
+
 @end

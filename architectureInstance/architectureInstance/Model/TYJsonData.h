@@ -12,4 +12,5 @@
 + (NSArray *)addJsonDataStr:(NSString *)str;
 + (CGSize)addWithCalculateHeightStr:(NSString *)str;
 + (UIImage *)addWithFilePathStr:(NSString *)str;
++ (UIImage *)addWithRequestStr:(NSString *)url;
 @end

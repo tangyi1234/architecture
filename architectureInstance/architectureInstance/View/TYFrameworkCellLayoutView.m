@@ -61,6 +61,11 @@
     _but.top = _lbl.top + _lbl.height + 5;
     _but.width = 100;
     _but.height = 50;
+    /*
+     图片是用不能这样直接使用，这里会去进行网络请求，这样会卡住主线程，加载图片还是要用异步加载。在一个就是要使用缓存机制。
+     */
+//    NSString *url = [NSString stringWithFormat:@"http://10.10.61.218:8080/name/%@.png",model.imageName];
+//    _imageView.image = [TYJsonData addWithRequestStr:url];
     
     _imageView.image = [TYJsonData addWithFilePathStr:model.imageName];
     _lbl.text = model.lblContent;
