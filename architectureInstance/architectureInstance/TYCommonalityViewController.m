@@ -12,6 +12,7 @@
 #import "TYFrameworkCellViewController.h"
 #import "TYImageViewViewController.h"
 #import "TYLayerViewController.h"
+#import "TYInheritanceHierarchyUseViewController.h"
 
 @interface TYCommonalityViewController ()
 
@@ -68,6 +69,16 @@
     [but4 setTitle:@"验证" forState:UIControlStateNormal];
     [but4 addTarget:self action:@selector(selectorBut4) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but4];
+    
+    UIButton *but5 = [UIButton buttonWithType:UIButtonTypeCustom];
+    but5.left = 10;
+    but5.top = but4.top + but4.height + 10;
+    but5.width = 100;
+    but5.height = 30;
+    but5.backgroundColor = [UIColor orangeColor];
+    [but5 setTitle:@"继承架构" forState:UIControlStateNormal];
+    [but5 addTarget:self action:@selector(selectorBut5) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:but5];
 }
 
 - (void)selectorBut {
@@ -92,6 +103,11 @@
 
 - (void)selectorBut4 {
     TYLayerViewController *vc = [[TYLayerViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)selectorBut5 {
+    TYInheritanceHierarchyUseViewController *vc = [[TYInheritanceHierarchyUseViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)didReceiveMemoryWarning {

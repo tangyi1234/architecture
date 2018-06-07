@@ -25,6 +25,12 @@
 		A285E61520C6722B0086D15A /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = A285E61320C6722A0086D15A /* 28.png */; };
 		A285E61620C6722B0086D15A /* 27.png in Resources */ = {isa = PBXBuildFile; fileRef = A285E61420C6722A0086D15A /* 27.png */; };
 		A285E61920C6808B0086D15A /* TYImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A285E61820C6808B0086D15A /* TYImageViewViewController.m */; };
+		A28D577720C8D1C2003DF36C /* TYInheritanceHierarchyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D577620C8D1C2003DF36C /* TYInheritanceHierarchyViewController.m */; };
+		A28D577A20C8D1FB003DF36C /* TYInheritanceHierarchyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D577920C8D1FB003DF36C /* TYInheritanceHierarchyTableViewCell.m */; };
+		A28D577D20C8DEA4003DF36C /* TYInheritanceHierarchyUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D577C20C8DEA4003DF36C /* TYInheritanceHierarchyUseViewController.m */; };
+		A28D578020C8E17A003DF36C /* TYInheritanceHierarchyUseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D577F20C8E17A003DF36C /* TYInheritanceHierarchyUseTableViewCell.m */; };
+		A28D578320C91375003DF36C /* TYInheritanceHierarchyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D578220C91375003DF36C /* TYInheritanceHierarchyModel.m */; };
+		A28D578520C917F8003DF36C /* InheritanceCellData.json in Resources */ = {isa = PBXBuildFile; fileRef = A28D578420C917F8003DF36C /* InheritanceCellData.json */; };
 		A2978BB320C77D5400560B3C /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A2978B7820C77D5400560B3C /* MKAnnotationView+WebCache.m */; };
 		A2978BB420C77D5400560B3C /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A2978B7A20C77D5400560B3C /* NSButton+WebCache.m */; };
 		A2978BB520C77D5400560B3C /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = A2978B7C20C77D5400560B3C /* NSData+ImageContentType.m */; };
@@ -132,6 +138,17 @@
 		A285E61420C6722A0086D15A /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 27.png; sourceTree = "<group>"; };
 		A285E61720C6808B0086D15A /* TYImageViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYImageViewViewController.h; sourceTree = "<group>"; };
 		A285E61820C6808B0086D15A /* TYImageViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYImageViewViewController.m; sourceTree = "<group>"; };
+		A28D577520C8D1C2003DF36C /* TYInheritanceHierarchyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInheritanceHierarchyViewController.h; sourceTree = "<group>"; };
+		A28D577620C8D1C2003DF36C /* TYInheritanceHierarchyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInheritanceHierarchyViewController.m; sourceTree = "<group>"; };
+		A28D577820C8D1FB003DF36C /* TYInheritanceHierarchyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInheritanceHierarchyTableViewCell.h; sourceTree = "<group>"; };
+		A28D577920C8D1FB003DF36C /* TYInheritanceHierarchyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInheritanceHierarchyTableViewCell.m; sourceTree = "<group>"; };
+		A28D577B20C8DEA4003DF36C /* TYInheritanceHierarchyUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInheritanceHierarchyUseViewController.h; sourceTree = "<group>"; };
+		A28D577C20C8DEA4003DF36C /* TYInheritanceHierarchyUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInheritanceHierarchyUseViewController.m; sourceTree = "<group>"; };
+		A28D577E20C8E17A003DF36C /* TYInheritanceHierarchyUseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInheritanceHierarchyUseTableViewCell.h; sourceTree = "<group>"; };
+		A28D577F20C8E17A003DF36C /* TYInheritanceHierarchyUseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInheritanceHierarchyUseTableViewCell.m; sourceTree = "<group>"; };
+		A28D578120C91375003DF36C /* TYInheritanceHierarchyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYInheritanceHierarchyModel.h; sourceTree = "<group>"; };
+		A28D578220C91375003DF36C /* TYInheritanceHierarchyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYInheritanceHierarchyModel.m; sourceTree = "<group>"; };
+		A28D578420C917F8003DF36C /* InheritanceCellData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InheritanceCellData.json; sourceTree = "<group>"; };
 		A2978B7720C77D5400560B3C /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		A2978B7820C77D5400560B3C /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		A2978B7920C77D5400560B3C /* NSButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSButton+WebCache.h"; sourceTree = "<group>"; };
@@ -304,6 +321,7 @@
 				A282282D20BD30A500219EAF /* TYViewController.m */,
 				A282283420BD30A600219EAF /* ViewController.h */,
 				A282283120BD30A600219EAF /* ViewController.m */,
+				A28D577420C8D1A1003DF36C /* InheritanceHierarchy */,
 				A2AC922120C0E2A20083D931 /* ModelLayout */,
 				A2E0219420BE9887008EA624 /* Data */,
 				A2E0218D20BE908C008EA624 /* Model */,
@@ -344,9 +362,24 @@
 				A2B7A79620C52BCB00003BBF /* TYFrameworkCellLayoutView.m */,
 				A2978BD720C7D18900560B3C /* TYLayerPlatformView.h */,
 				A2978BD820C7D18900560B3C /* TYLayerPlatformView.m */,
+				A28D577820C8D1FB003DF36C /* TYInheritanceHierarchyTableViewCell.h */,
+				A28D577920C8D1FB003DF36C /* TYInheritanceHierarchyTableViewCell.m */,
+				A28D577E20C8E17A003DF36C /* TYInheritanceHierarchyUseTableViewCell.h */,
+				A28D577F20C8E17A003DF36C /* TYInheritanceHierarchyUseTableViewCell.m */,
 				A2A5D0E320BF98D600B31EE9 /* 1.png */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A28D577420C8D1A1003DF36C /* InheritanceHierarchy */ = {
+			isa = PBXGroup;
+			children = (
+				A28D577520C8D1C2003DF36C /* TYInheritanceHierarchyViewController.h */,
+				A28D577620C8D1C2003DF36C /* TYInheritanceHierarchyViewController.m */,
+				A28D577B20C8DEA4003DF36C /* TYInheritanceHierarchyUseViewController.h */,
+				A28D577C20C8DEA4003DF36C /* TYInheritanceHierarchyUseViewController.m */,
+			);
+			path = InheritanceHierarchy;
 			sourceTree = "<group>";
 		};
 		A2978B7220C77D4700560B3C /* ThreePartiesFramework */ = {
@@ -487,6 +520,8 @@
 				A2A5D0EB20BF9E2300B31EE9 /* TYInstanceDataModel.m */,
 				A2B7A79820C534A100003BBF /* TYFrameworkCellModel.h */,
 				A2B7A79920C534A100003BBF /* TYFrameworkCellModel.m */,
+				A28D578120C91375003DF36C /* TYInheritanceHierarchyModel.h */,
+				A28D578220C91375003DF36C /* TYInheritanceHierarchyModel.m */,
 				A2E0219120BE9189008EA624 /* TYModel.h */,
 				A2E0219220BE9189008EA624 /* TYModel.m */,
 				A2A5D0E720BF9BD900B31EE9 /* TYJsonData.h */,
@@ -502,6 +537,7 @@
 				A2A5D0E520BF9AAB00B31EE9 /* contentData.json */,
 				A2B7A79B20C534E600003BBF /* frameworkContent.json */,
 				A285E60F20C63A490086D15A /* cellData.json */,
+				A28D578420C917F8003DF36C /* InheritanceCellData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -596,6 +632,7 @@
 				A2A5D0E420BF98D600B31EE9 /* 1.png in Resources */,
 				A2B7A7CF20C53CF800003BBF /* 22.png in Resources */,
 				A2B7A7C120C53CF800003BBF /* 5.png in Resources */,
+				A28D578520C917F8003DF36C /* InheritanceCellData.json in Resources */,
 				A2B7A7B920C53CF800003BBF /* 23.png in Resources */,
 				A285E61020C63A490086D15A /* cellData.json in Resources */,
 				A2A5D0E620BF9AAB00B31EE9 /* contentData.json in Resources */,
@@ -615,6 +652,7 @@
 				A2978BB620C77D5400560B3C /* NSImage+WebCache.m in Sources */,
 				A2978BCE20C77D5400560B3C /* UIView+WebCache.m in Sources */,
 				A2A5D0E920BF9BD900B31EE9 /* TYJsonData.m in Sources */,
+				A28D577D20C8DEA4003DF36C /* TYInheritanceHierarchyUseViewController.m in Sources */,
 				A282283620BD30A600219EAF /* TYFrameworkViewController.m in Sources */,
 				A2B7A79720C52BCB00003BBF /* TYFrameworkCellLayoutView.m in Sources */,
 				A282283520BD30A600219EAF /* SKFFPSLabel.m in Sources */,
@@ -627,8 +665,10 @@
 				A2978BBB20C77D5400560B3C /* SDWebImageCoderHelper.m in Sources */,
 				A2978BC120C77D5400560B3C /* SDWebImageGIFCoder.m in Sources */,
 				A282280D20BD2F0300219EAF /* architectureInstance.xcdatamodeld in Sources */,
+				A28D577720C8D1C2003DF36C /* TYInheritanceHierarchyViewController.m in Sources */,
 				A2978BCD20C77D5400560B3C /* UIImageView+WebCache.m in Sources */,
 				A2978BCF20C77D5400560B3C /* UIView+WebCacheOperation.m in Sources */,
+				A28D577A20C8D1FB003DF36C /* TYInheritanceHierarchyTableViewCell.m in Sources */,
 				A2978BBC20C77D5400560B3C /* SDWebImageCodersManager.m in Sources */,
 				A2978BBE20C77D5400560B3C /* SDWebImageDownloader.m in Sources */,
 				A2AC922420C0E37E0083D931 /* TYViewModelLayout.m in Sources */,
@@ -641,12 +681,14 @@
 				A2978BB720C77D5400560B3C /* SDAnimatedImageRep.m in Sources */,
 				A282283A20BD30A600219EAF /* ViewController.m in Sources */,
 				A282283920BD30A600219EAF /* TYSubclassTableViewCell.m in Sources */,
+				A28D578320C91375003DF36C /* TYInheritanceHierarchyModel.m in Sources */,
 				A2B7A79420C52A5E00003BBF /* TYFrameworkCellTableViewCell.m in Sources */,
 				A2978BBF20C77D5400560B3C /* SDWebImageDownloaderOperation.m in Sources */,
 				A2978BCB20C77D5400560B3C /* UIImage+WebP.m in Sources */,
 				A282281E20BD306B00219EAF /* UIView+add.m in Sources */,
 				A2978BB920C77D5400560B3C /* SDImageCacheConfig.m in Sources */,
 				A282280420BD2F0300219EAF /* AppDelegate.m in Sources */,
+				A28D578020C8E17A003DF36C /* TYInheritanceHierarchyUseTableViewCell.m in Sources */,
 				A2E0219B20BEA2D0008EA624 /* TYInstanceLayoutView.m in Sources */,
 				A2978BCA20C77D5400560B3C /* UIImage+MultiFormat.m in Sources */,
 				A2978BB520C77D5400560B3C /* NSData+ImageContentType.m in Sources */,
