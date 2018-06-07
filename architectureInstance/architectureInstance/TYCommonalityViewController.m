@@ -11,6 +11,7 @@
 #import "TYFrameworkViewController.h"
 #import "TYFrameworkCellViewController.h"
 #import "TYImageViewViewController.h"
+#import "TYLayerViewController.h"
 
 @interface TYCommonalityViewController ()
 
@@ -57,6 +58,16 @@
     [but3 setTitle:@"图片处理" forState:UIControlStateNormal];
     [but3 addTarget:self action:@selector(selectorBut3) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but3];
+    
+    UIButton *but4 = [UIButton buttonWithType:UIButtonTypeCustom];
+    but4.left = 10;
+    but4.top = but3.top + but3.height + 10;
+    but4.width = 100;
+    but4.height = 30;
+    but4.backgroundColor = [UIColor orangeColor];
+    [but4 setTitle:@"验证" forState:UIControlStateNormal];
+    [but4 addTarget:self action:@selector(selectorBut4) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:but4];
 }
 
 - (void)selectorBut {
@@ -79,6 +90,10 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)selectorBut4 {
+    TYLayerViewController *vc = [[TYLayerViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

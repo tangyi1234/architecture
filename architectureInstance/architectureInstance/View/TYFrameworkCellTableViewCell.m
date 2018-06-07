@@ -8,6 +8,8 @@
 
 #import "TYFrameworkCellTableViewCell.h"
 #import "TYFrameworkCellLayoutView.h"
+#import "TYFrameworkLogic.h"
+
 @interface TYFrameworkCellTableViewCell()
 @property (nonatomic, weak) TYFrameworkCellLayoutView *layoutView;
 @end
@@ -28,13 +30,16 @@
     [self addSubview:_layoutView = layoutView];
 }
 
-- (void)introductionWithData:(TYFrameworkCellModel *)model {
+- (void)introductionWithData:(TYFrameworkCellModel *)model sliding:(BOOL)sliding {
     _layoutView.left = 0;
     _layoutView.top = 0;
     _layoutView.width = w;
     _layoutView.height = [model.viewHeight floatValue];
     
     [_layoutView addWithLayoutModel:model];
+    [TYFrameworkLogic addWithImageUrl:model sliding:sliding operationImage:^(NSString *urlStr) {
+        [_layoutView addWithImageUrl:urlStr];
+    }];
 }
 
 - (void)awakeFromNib {

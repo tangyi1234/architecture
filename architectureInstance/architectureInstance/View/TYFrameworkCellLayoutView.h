@@ -11,4 +11,5 @@
 @interface TYFrameworkCellLayoutView : UIView
 + (instancetype)addFrameworkCellLayoutView;
 - (void)addWithLayoutModel:(TYFrameworkCellModel *)model;
+- (void)addWithImageUrl:(NSString *)urlStr;
 @end

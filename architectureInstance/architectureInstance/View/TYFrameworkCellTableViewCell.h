@@ -10,5 +10,5 @@
 
 @interface TYFrameworkCellTableViewCell : UITableViewCell
 + (instancetype)addFrameworkCellTableViewCell:(UITableView *)tableView;
-- (void)introductionWithData:(TYFrameworkCellModel *)model;
+- (void)introductionWithData:(TYFrameworkCellModel *)model sliding:(BOOL)sliding;
 @end

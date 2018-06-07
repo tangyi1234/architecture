@@ -15,6 +15,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArr;
 @property (nonatomic, strong) SKFFPSLabel *SkfFPSLabel;
+@property (nonatomic, assign) BOOL sliding;
 @end
 
 @implementation TYFrameworkCellViewController
@@ -27,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"滑动原始状态:%d",_sliding);
     [self initTableView];
     [self uploadWithData];
     [self startTheFPSLabel];
@@ -50,7 +52,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TYFrameworkCellTableViewCell *cell = [TYFrameworkCellTableViewCell addFrameworkCellTableViewCell:tableView];
-    [cell introductionWithData:_dataArr[indexPath.row]];
+    [cell introductionWithData:_dataArr[indexPath.row] sliding:_sliding];
     return cell;
 }
 
@@ -59,12 +61,12 @@
     return [model.viewHeight floatValue];
 }
 
-#pragma mark -UIScrollView代理
+#pragma mark -UIScrollView代理 当滑动的时候先走的是ScrollView代理方法，执行完了才走TableView代理方法
 // 当开始滚动视图时，执行该方法。一次有效滑动（开始滑动，滑动一小段距离，只要手指不松开，只算一次滑动），只执行一次。
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     
-    NSLog(@"scrollViewWillBeginDragging");
-    
+    NSLog(@"scrollViewWillBeginDragging开始滑动");
+    _sliding = YES;//开始滑动
 }
 
 // 滑动scrollView，并且手指离开时执行。一次有效滑动，只执行一次。
@@ -77,8 +79,6 @@
 // 滑动视图，当手指离开屏幕那一霎那，调用该方法。一次有效滑动，只执行一次。
 // decelerate,指代，当我们手指离开那一瞬后，视图是否还将继续向前滚动（一段距离），经过测试，decelerate=YES
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    
-    NSLog(@"scrollViewDidEndDragging");
     if (decelerate) {
         NSLog(@"decelerate");
     }else{
@@ -100,8 +100,8 @@
 
 // 滚动视图减速完成，滚动将停止时，调用该方法。一次有效滑动，只执行一次。
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    
-    NSLog(@"scrollViewDidEndDecelerating");
+    _sliding = NO;//停止滑动
+    NSLog(@"scrollViewDidEndDecelerating停止");
     
 //    [_scrollView setContentOffset:CGPointMake(0, 500) animated:YES];
 }

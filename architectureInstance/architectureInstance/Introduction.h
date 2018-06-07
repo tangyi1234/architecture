@@ -24,4 +24,5 @@
 #import "TYInstanceLayoutView.h"
 #import "TYJsonData.h"
 
+#import "UIImageView+WebCache.h"
 #endif /* Introduction_h */
